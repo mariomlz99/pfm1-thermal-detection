@@ -1,4 +1,4 @@
-# Supplementary Material of the ICCAS 2025 Submission
+# Tuned parameters of the ICCAS 2025 paper submission
 
 **ICCAS Submission Supplementary Material**
 
