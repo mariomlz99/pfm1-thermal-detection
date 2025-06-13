@@ -7,24 +7,26 @@ This repository provides supplementary material for the ICCAS submission, specif
 
 The following table presents the symbolic representation and optimization range for each parameter found in the YAML configuration files. These parameters were tuned using Optuna, and are grouped according to their role in the system:
 
-| YAML Parameter                        | Symbol                        | Range         |
-|--------------------------------------|-------------------------------|---------------|
-| `HOT_PIXEL_PERCENTAGE`               | \( P_{\text{hot}} \)          | [0.1, 0.5]     |
-| `MIN_BLOB_SIZE`                      | \( A_{\text{min}} \)          | [15, 40]       |
-| `AVG_THERMAL_GRADIENT_THRESHOLD`     | \( T_G \)                     | [60, 80]       |
-| `MAX_TRACKING_DISTANCE`              | \( D_{\text{max}} \)          | [30, 60]       |
-| `MIN_STRENGTH_THRESHOLD`             | \( S_{\text{min}} \)          | [0.4, 0.95]    |
-| `STRENGTH_DECAY`                     | \( D_S \)                     | [0.4, 0.9]     |
-| `PERSISTENCE_THRESHOLD`              | \( T_{\text{pers}} \)         | [0.2, 1.0]     |
-| `initial_valid_strength`             | \( S_{\text{valid\_init}} \)  | [0.7, 1.0]     |
-| `initial_invalid_strength`           | \( S_{\text{invalid\_init}} \)| [0.3, 0.8]     |
-| `matched_decay_base`                 | \( M_{\text{base}} \)         | [0.6, 0.8]     |
-| `matched_decay_bonus`                | \( M_{\text{bonus}} \)        | [0.2, 0.5]     |
-| `unmatched_decay_base`               | \( U_{\text{base}} \)         | [0.4, 0.7]     |
-| `unmatched_decay_bonus`              | \( U_{\text{bonus}} \)        | [0.1, 0.4]     |
-| `VALIDITY_MARGIN_RATIO`              | \( V_{\text{margin}} \)       | [0.5, 0.9]     |
-| `gradient_decay_factor`              | \( D_{\text{grad}} \)         | [0.0, 1.0]     |
-| `fallback_search_radius`             | \( R_{\text{fb}} \)           | [10, 40]       |
+## Optimized Parameters
+
+| YAML Parameter                    | Symbol        | Range         |
+|----------------------------------|---------------|---------------|
+| `HOT_PIXEL_PERCENTAGE`           | `P_hot`       | [0.1, 0.5]     |
+| `MIN_BLOB_SIZE`                  | `A_min`       | [15, 40]       |
+| `AVG_THERMAL_GRADIENT_THRESHOLD`| `T_G`         | [60, 80]       |
+| `MAX_TRACKING_DISTANCE`          | `D_max`       | [30, 60]       |
+| `MIN_STRENGTH_THRESHOLD`         | `S_min`       | [0.4, 0.95]    |
+| `STRENGTH_DECAY`                 | `D_S`         | [0.4, 0.9]     |
+| `PERSISTENCE_THRESHOLD`          | `T_pers`      | [0.2, 1.0]     |
+| `initial_valid_strength`         | `S_valid_init`| [0.7, 1.0]     |
+| `initial_invalid_strength`       | `S_invalid_init`| [0.3, 0.8]   |
+| `matched_decay_base`            | `M_base`      | [0.6, 0.8]     |
+| `matched_decay_bonus`           | `M_bonus`     | [0.2, 0.5]     |
+| `unmatched_decay_base`          | `U_base`      | [0.4, 0.7]     |
+| `unmatched_decay_bonus`         | `U_bonus`     | [0.1, 0.4]     |
+| `VALIDITY_MARGIN_RATIO`         | `V_margin`    | [0.5, 0.9]     |
+| `gradient_decay_factor`         | `D_grad`      | [0.0, 1.0]     |
+| `fallback_search_radius`        | `R_fb`        | [10, 40]       |
 
 Additionally:
 - `train_score`: training score achieved by the configuration.
