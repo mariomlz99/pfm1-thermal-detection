@@ -1,4 +1,5 @@
-# Supplementary material of the ICCAS 2025 Submission
+# Supplementary Material of the ICCAS 2025 Submission
+
 **ICCAS Submission Supplementary Material**
 
 This repository provides supplementary material for the ICCAS submission, specifically showcasing the parameters obtained through optimization.
@@ -38,9 +39,9 @@ Additionally:
 Each folder contains a full YAML configuration corresponding to a specific training/validation and optimization objective:
 
 - `TrainT1_ValT2_F1Score`: Trained on Track 1, validated on Track 2, optimized for F1 score.
-- `TrainT1_ValT2_FBetaScore`: Trained on Track 1, validated on Track 2, optimized for FBeta score.
+- `TrainT1_ValT2_FBetaScore`: Trained on Track 1, validated on Track 2, optimized for F2a score.
 - `TrainT2_ValT1_F1Score`: Trained on Track 2, validated on Track 1, optimized for F1 score.
-- `TrainT2_ValT1_FBetaScore`: Trained on Track 2, validated on Track 1, optimized for FBeta score.
+- `TrainT2_ValT1_FBetaScore`: Trained on Track 2, validated on Track 1, optimized for F2 score.
 
 ## Fixed Parameters (Manually Tuned)
 
