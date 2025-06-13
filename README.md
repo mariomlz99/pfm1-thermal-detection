@@ -44,15 +44,16 @@ Each folder contains a full YAML configuration corresponding to a specific train
 
 ## Fixed Parameters (Manually Tuned)
 
-The following parameters were set manually based on camera-track setup, environmental conditions, and sensor characteristics:
+The following parameters were set manually based on the nominal camera–track distance, ambient conditions, and sensor refresh characteristics:
 
-- \( S_{\text{erode}} = 4 \)
-- \( S_{\text{dilate}} = 3 \)
-- \( r_{\text{ring}} = 5 \)
-- \( T_{\text{hist}} = 50 \)
-- \( N_H = 2 \)
-- \( N_G = 3 \)
+| Parameter             | Symbol              | Value        |
+|-----------------------|---------------------|--------------|
+| Erosion kernel size   | `S_erode`           | 4            |
+| Dilation kernel size  | `S_dilate`          | 3            |
+| Ring radius           | `r_ring`            | 5      |
+| Thermal history       | `T_hist`            | 50           |
+| Temporal window size  | `N_H`               | 2            |
+| Gradient steps        | `N_G`               | 3            |
 
-These values were chosen empirically:
-- Morphological kernel sizes \( S_{\text{erode}} \), \( S_{\text{dilate}} \), and ring radius \( r_{\text{ring}} \) were set based on the nominal camera–track distance.
-- Thermal-related parameters \( T_{\text{hist}} \), \( N_H \), and \( N_G \) were fixed according to ambient conditions and sensor refresh rate.
+- Morphological parameters (`S_erode`, `S_dilate`, `r_ring`) were tuned to match the nominal camera–track distance.
+- Thermal parameters (`T_hist`, `N_H`, `N_G`) were fixed empirically based on ambient conditions and the sensor refresh rate.
