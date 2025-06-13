@@ -1,4 +1,4 @@
-# iccas_submission_supp
+# Supplementary material of the ICCAS 2025 Submission
 **ICCAS Submission Supplementary Material**
 
 This repository provides supplementary material for the ICCAS submission, specifically showcasing the parameters obtained through optimization.
