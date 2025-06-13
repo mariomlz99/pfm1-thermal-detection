@@ -1,8 +1,6 @@
 # Tuned parameters of the ICCAS 2025 paper submission
 
-**ICCAS Submission Supplementary Material**
-
-This repository provides supplementary material for the ICCAS submission, specifically showcasing the parameters obtained through optimization.
+This repository provides the parameters obtained through optimization in the ICCAS 2025 paper + manually tuned parameters.
 
 ## Optimized Parameters
 
