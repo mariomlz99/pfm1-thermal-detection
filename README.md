@@ -1,10 +1,14 @@
-# Tuned parameters of the ICCAS 2025 paper submission
+# PFM-1 Landmine Detection in Vegetation Using Thermal Imaging with Limited Training Data (ICCAS 2025)
 
-This repository provides the parameters obtained through optimization in the ICCAS 2025 paper + manually tuned parameters.
+The parameters are divided into two groups:
 
-## Optimized Parameters
+- **Optimized Parameters (Optuna)** — parameters tuned automatically through optimization.  
+- **Fixed Parameters (Manually Tuned)** — parameters set empirically based on camera–track distance, ambient conditions, and sensor refresh rate.  
 
-The following table presents the symbolic representation and optimization range for each parameter found in the YAML configuration files. These parameters were tuned using Optuna, and are grouped according to their role in the system:
+---
+
+The following table presents the symbolic representation and optimization range for each parameter found in the YAML configuration files.  
+These parameters were tuned using **Optuna** and are grouped according to their role in the system:
 
 ## Optimized Parameters
 
