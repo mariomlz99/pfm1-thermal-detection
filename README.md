@@ -51,8 +51,8 @@ The following parameters were set manually based on the nominal camera–track d
 
 | Parameter             | Symbol              | Value        |
 |-----------------------|---------------------|--------------|
-| Erosion kernel size   | `S_erode`           | 4            |
-| Dilation kernel size  | `S_dilate`          | 3            |
+| Erosion kernel size   | `S_erode`           | 3            |
+| Dilation kernel size  | `S_dilate`          | 4            |
 | Ring radius           | `r_ring`            | 5      |
 | Thermal history       | `T_hist`            | 50           |
 | Temporal window size  | `N_H`               | 2            |
